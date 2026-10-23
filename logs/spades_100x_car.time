@@ -1,0 +1,23 @@
+	Command being timed: "spades.py --careful -1 10_depth/S1_100x_R1.fq.gz -2 10_depth/S1_100x_R2.fq.gz -t 10 -m 12 -o 10_depth/S1_100x_car"
+	User time (seconds): 1940.55
+	System time (seconds): 68.50
+	Percent of CPU this job got: 732%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:34.15
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3954524
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 66
+	Minor (reclaiming a frame) page faults: 7620382
+	Voluntary context switches: 617709
+	Involuntary context switches: 37085
+	Swaps: 0
+	File system inputs: 124552
+	File system outputs: 16268128
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

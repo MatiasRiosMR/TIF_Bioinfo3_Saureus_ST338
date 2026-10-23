@@ -1,0 +1,12 @@
+contig	largo_pb	cov_kmer	profundidad_media	copias_estimadas	clase
+NODE_91	1715	3517	7454	10.4	ARN ribosomal
+NODE_99	1628	3319	7038	9.8	ARN ribosomal
+NODE_147	1275	3192	6573	9.1	ARN ribosomal
+NODE_76	2133	1483	3191	4.4	Elemento de inserción
+NODE_597	744	1615	3187	4.4	Elemento de inserción
+NODE_1251	552	2106	3859	5.4	Repetición no codificante
+NODE_45	20269	927	2099	2.9	Compatible con plásmido (blaZ, Tn552)
+NODE_66	2924	778	1707	2.4	Bloque de profago
+NODE_85	1795	790	1687	2.3	Bloque de profago
+NODE_201	1122	660	1360	1.9	Bloque de profago
+NODE_987	606	858	1590	2.2	Región de profago (NODE_987)

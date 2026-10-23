@@ -1,0 +1,2 @@
+Sample	Surviving Reads	Forward Only Surviving	Reverse Only Surviving	Dropped
+SRR26803856	7781558.0	133773.0	433400.0	67672.0

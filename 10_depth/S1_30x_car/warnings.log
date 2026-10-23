@@ -1,0 +1,4 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:03.839    10M / 1202M WARN    General                 (kmer_coverage_model.cpp   : 219)   Too many erroneous kmers, the estimates might be unreliable
+======= Warnings saved to /home/matiasr/tp_final/10_depth/S1_30x_car/warnings.log

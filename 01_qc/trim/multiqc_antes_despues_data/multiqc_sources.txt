@@ -1,0 +1,6 @@
+Module	Section	Sample Name	Source
+Trimmomatic	all_sections	trimmomatic_S1	/home/matiasr/tp_final/logs/trimmomatic_S1.log
+FastQC	all_sections	S1_R1	/home/matiasr/tp_final/01_qc/trim/S1_R1_fastqc.zip
+FastQC	all_sections	S1_R2	/home/matiasr/tp_final/01_qc/trim/S1_R2_fastqc.zip
+FastQC	all_sections	SRR26803856_1	/home/matiasr/tp_final/01_qc/raw/SRR26803856_1_fastqc.zip
+FastQC	all_sections	SRR26803856_2	/home/matiasr/tp_final/01_qc/raw/SRR26803856_2_fastqc.zip

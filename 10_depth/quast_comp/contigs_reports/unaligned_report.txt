@@ -1,0 +1,8 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                       completo  filtrado  100x_iso  100x_car  30x_iso  30x_car
+# fully unaligned contigs      1477      8         41        40        13       14     
+Fully unaligned length         1118667   38580     58983     57878     43201    43799  
+# partially unaligned contigs  74        34        32        32        30       30     
+Partially unaligned length     311733    265846    267546    267639    263856   262281 
+# N's                          0         0         0         0         0        0      

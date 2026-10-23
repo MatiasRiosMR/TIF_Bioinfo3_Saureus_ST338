@@ -1,0 +1,23 @@
+	Command being timed: "spades.py --isolate -1 10_depth/test_R1.fq.gz -2 10_depth/test_R2.fq.gz -t 10 -m 12 -o 10_depth/test"
+	User time (seconds): 482.00
+	System time (seconds): 15.95
+	Percent of CPU this job got: 764%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:05.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1544088
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 266
+	Minor (reclaiming a frame) page faults: 1784338
+	Voluntary context switches: 4710
+	Involuntary context switches: 21704
+	Swaps: 0
+	File system inputs: 40784
+	File system outputs: 4587392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

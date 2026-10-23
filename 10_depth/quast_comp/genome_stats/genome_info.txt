@@ -1,0 +1,19 @@
+reference chromosomes:
+	ENA_BX571856_BX571856.1 (total length: 2902619 bp, total length without N's: 2902619 bp, maximal covered length: 2503107 bp)
+
+total genome size: 2902619
+
+gap min size: 50
+partial gene/operon min size: 100
+
+
+
+assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
+                         | fraction  | ratio       | number    |           | genes     |           | operons   |
+========================================================================================================================
+completo                 | 86.236    | 1.004       | 144       | -         | -         | -         | -         |
+filtrado                 | 85.415    | 1.001       | 124       | -         | -         | -         | -         |
+100x_iso                 | 85.395    | 1.000       | 122       | -         | -         | -         | -         |
+100x_car                 | 85.386    | 1.000       | 120       | -         | -         | -         | -         |
+30x_iso                  | 85.396    | 1.000       | 126       | -         | -         | -         | -         |
+30x_car                  | 85.393    | 1.000       | 127       | -         | -         | -         | -         |

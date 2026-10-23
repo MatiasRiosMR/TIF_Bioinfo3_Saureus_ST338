@@ -1,0 +1,240 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Before_start_J1Q5RZDJMYM5NCC350NEQ7C23IJ9KPLR
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Read_error_correction_VXYB8CL69Y979CHQYY0TTGAY0NZSXO10
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: ec_start
+- STAGE: Read error correction
+  args:
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/corrected/configs/config.info
+  config_dir: corrected
+  del_after:
+  - tmp/hammer_z67nmmk0
+  job_uuid: SPAdes_Read_error_correction_6L1NLKLU8FLGUG1709H5GHHGJKQS3QKT
+  mpi_support: false
+  output_files:
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/corrected/corrected.yaml
+  path: /home/matiasr/miniconda3/envs/tif_bioinfo3/bin/spades-hammer
+  short_name: ec_runtool
+- STAGE: corrected reads compression
+  args:
+  - /home/matiasr/miniconda3/envs/tif_bioinfo3/share/spades/spades_pipeline/supplemetary/compress_all.py
+  - --input_file
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/corrected/corrected.yaml
+  - --ext_python_modules_home
+  - /home/matiasr/miniconda3/envs/tif_bioinfo3/share/spades
+  - --max_threads
+  - '10'
+  - --output_dir
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/corrected
+  - --gzip_output
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_corrected_reads_compression_NJMZ4ZS3EO451S6TIV8GTMK29TXD9F52
+  mpi_support: false
+  output_files: []
+  path: /home/matiasr/miniconda3/envs/tif_bioinfo3/bin/python3
+  short_name: ec_compress
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Read_error_correction_QFSIBXA8Z80EA3UUF6BIAAKTWJ8WTNGM
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: ec_finish
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_7GWKZM7EEFBJNNB6DR103Z59AA60LLVN
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K21
+  args:
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K21/configs/config.info
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K21/configs/careful_mode.info
+  config_dir: K21
+  del_after: []
+  job_uuid: SPAdes_K21_6CTYSQ5LJSKEYA85IOY6WDZQ5OHQ8Q66
+  mpi_support: false
+  output_files: []
+  path: /home/matiasr/miniconda3/envs/tif_bioinfo3/bin/spades-core
+  short_name: k21
+- STAGE: K33
+  args:
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K33/configs/config.info
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K33/configs/careful_mode.info
+  config_dir: K33
+  del_after: []
+  job_uuid: SPAdes_K33_FJDX4H475O3MZJPP1Q0WQI8JBBOK8OA6
+  mpi_support: false
+  output_files: []
+  path: /home/matiasr/miniconda3/envs/tif_bioinfo3/bin/spades-core
+  short_name: k33
+- STAGE: K55
+  args:
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K55/configs/config.info
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K55/configs/careful_mode.info
+  config_dir: K55
+  del_after: []
+  job_uuid: SPAdes_K55_DERF3BHZ2JEZYCX1U0980XXJIHXKPZ0B
+  mpi_support: false
+  output_files: []
+  path: /home/matiasr/miniconda3/envs/tif_bioinfo3/bin/spades-core
+  short_name: k55
+- STAGE: K77
+  args:
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K77/configs/config.info
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K77/configs/careful_mode.info
+  config_dir: K77
+  del_after: []
+  job_uuid: SPAdes_K77_PX4HVZBS37TXDW5AGJFWP6RZMRDA4VVF
+  mpi_support: false
+  output_files: []
+  path: /home/matiasr/miniconda3/envs/tif_bioinfo3/bin/spades-core
+  short_name: k77
+- STAGE: Copy files
+  args:
+  - /home/matiasr/miniconda3/envs/tif_bioinfo3/share/spades/spades_pipeline/supplemetary/copy_files.py
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K77/before_rr.fasta
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/before_rr.fasta
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K77/assembly_graph_after_simplification.gfa
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/assembly_graph_after_simplification.gfa
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K77/final_contigs.fasta
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/contigs.fasta
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K77/first_pe_contigs.fasta
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/first_pe_contigs.fasta
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K77/strain_graph.gfa
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/strain_graph.gfa
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K77/scaffolds.fasta
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/scaffolds.fasta
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K77/scaffolds.paths
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/scaffolds.paths
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K77/assembly_graph_with_scaffolds.gfa
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/assembly_graph_with_scaffolds.gfa
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K77/assembly_graph.fastg
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/assembly_graph.fastg
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/K77/final_contigs.paths
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_wxwuzbrt
+  job_uuid: SPAdes_Copy_files_KR9K0V4UP1QYQCSTT5O2OACOI6XFBCR7
+  mpi_support: false
+  output_files: []
+  path: /home/matiasr/miniconda3/envs/tif_bioinfo3/bin/python3
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_9T4ZQNILI8RTSAKXNJ7DL5K00J1T797U
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Mismatch correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Mismatch_correction_A5E2Y0K5UFKZLDFFW2MYM0JCR91O1BQH
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: mc_start
+- STAGE: Mismatch correction contigs
+  args:
+  - /home/matiasr/miniconda3/envs/tif_bioinfo3/share/spades/spades_pipeline/supplemetary/correction_iteration_script.py
+  - --corrected
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/contigs.fasta
+  - --assembled
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/misc/assembled_contigs.fasta
+  - --assembly_type
+  - contigs
+  - --output_dir
+  - /home/matiasr/tp_final/10_depth/S1_100x_car
+  - --bin_home
+  - /home/matiasr/miniconda3/envs/tif_bioinfo3/bin
+  config_dir: mismatch_corrector/contigs
+  del_after:
+  - mismatch_corrector/contigs/tmp
+  - tmp/corrector_gry6ozcs
+  job_uuid: SPAdes_Mismatch_correction_contigs_H8HR0EKLUYTD6A0M4464EAA6XSJL1MNO
+  mpi_support: false
+  output_files: []
+  path: /home/matiasr/miniconda3/envs/tif_bioinfo3/bin/python3
+  short_name: mc_contigs
+- STAGE: Mismatch correction scaffolds
+  args:
+  - /home/matiasr/miniconda3/envs/tif_bioinfo3/share/spades/spades_pipeline/supplemetary/correction_iteration_script.py
+  - --corrected
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/scaffolds.fasta
+  - --assembled
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/misc/assembled_scaffolds.fasta
+  - --assembly_type
+  - scaffolds
+  - --output_dir
+  - /home/matiasr/tp_final/10_depth/S1_100x_car
+  - --bin_home
+  - /home/matiasr/miniconda3/envs/tif_bioinfo3/bin
+  config_dir: mismatch_corrector/scaffolds
+  del_after:
+  - mismatch_corrector/scaffolds/tmp
+  - tmp/corrector_fi57_8vx
+  job_uuid: SPAdes_Mismatch_correction_scaffolds_M7F2PB3RVD9TD90ZO2JWHXDFBFVNLWOH
+  mpi_support: false
+  output_files: []
+  path: /home/matiasr/miniconda3/envs/tif_bioinfo3/bin/python3
+  short_name: mc_scaffolds
+- STAGE: Mismatch correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Mismatch_correction_BMRATQKNGY5GE8SPCLPKCFGKO70G8Q7B
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: mc_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /home/matiasr/miniconda3/envs/tif_bioinfo3/share/spades/spades_pipeline/supplemetary/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/scaffolds.fasta
+  - --misc_dir
+  - /home/matiasr/tp_final/10_depth/S1_100x_car/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Breaking_scaffolds_QVEOWDJSG3JTPS9E011GNKPAEUZT5X0B
+  mpi_support: false
+  output_files: []
+  path: /home/matiasr/miniconda3/envs/tif_bioinfo3/bin/python3
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  job_uuid: SPAdes_Terminate_S9Z1723GWY7XDFMGBGP95BOWQKVV1015
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: terminate

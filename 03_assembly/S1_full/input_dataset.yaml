@@ -1,0 +1,7 @@
+- "left reads":
+  - "/home/matiasr/tp_final/02_trim/S1_R1.fq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/home/matiasr/tp_final/02_trim/S1_R2.fq.gz"
+  "type": "paired-end"

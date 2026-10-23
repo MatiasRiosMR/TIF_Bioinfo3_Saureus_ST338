@@ -1,0 +1,8 @@
+organism: Staphylococcus aureus B378 
+contigs: 74
+bases: 2790840
+CDS: 2576
+gene: 2636
+rRNA: 4
+tRNA: 55
+tmRNA: 1

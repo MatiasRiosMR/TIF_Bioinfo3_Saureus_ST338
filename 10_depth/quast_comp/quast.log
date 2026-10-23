@@ -1,0 +1,224 @@
+/home/matiasr/miniconda3/envs/quast_env/bin/quast.py 03_assembly/S1_full/contigs.fasta 03_assembly/S1_full/contigs_cov100.fasta 10_depth/S1_100x_iso/contigs.fasta 10_depth/S1_100x_car/contigs.fasta 10_depth/S1_30x_iso/contigs.fasta 10_depth/S1_30x_car/contigs.fasta -r 05_reference/MRSA252.fasta -l completo,filtrado,100x_iso,100x_car,30x_iso,30x_car -o 10_depth/quast_comp -t 4
+
+Version: 5.3.0
+
+System information:
+  OS: Linux-7.0.0-38-generic-x86_64-desconocido-with-glibc2.43 (linux_64)
+  Python version: 3.9.23
+  CPUs number: 12
+
+Started: 2026-10-22 11:33:02
+
+Logging to /home/matiasr/tp_final/10_depth/quast_comp/quast.log
+NOTICE: Output directory already exists and looks like a QUAST output dir. Existing results can be reused (e.g. previously generated alignments)!
+
+CWD: /home/matiasr/tp_final
+Main parameters: 
+  MODE: default, threads: 4, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Reference:
+  /home/matiasr/tp_final/05_reference/MRSA252.fasta ==> MRSA252
+
+Contigs:
+  Pre-processing...
+  1  03_assembly/S1_full/contigs.fasta ==> completo
+  2  03_assembly/S1_full/contigs_cov100.fasta ==> filtrado
+  3  10_depth/S1_100x_iso/contigs.fasta ==> 100x_iso
+  4  10_depth/S1_100x_car/contigs.fasta ==> 100x_car
+  5  10_depth/S1_30x_iso/contigs.fasta ==> 30x_iso
+  6  10_depth/S1_30x_car/contigs.fasta ==> 30x_car
+
+2026-10-22 11:33:03
+Running Basic statistics processor...
+  Reference genome:
+    MRSA252.fasta, length = 2902619, num fragments = 1, GC % = 32.81
+  Contig files: 
+    1  completo
+    2  filtrado
+    3  100x_iso
+    4  100x_car
+    5  30x_iso
+    6  30x_car
+  Calculating N50 and L50...
+    1  completo, N50 = 43072, L50 = 24, auN = 54867.3, Total length = 3950145, GC % = 35.83, # N's per 100 kbp =  0.00
+    2  filtrado, N50 = 70746, L50 = 14, auN = 77267.5, Total length = 2790840, GC % = 32.76, # N's per 100 kbp =  0.00
+    3  100x_iso, N50 = 98457, L50 = 9, auN = 127745.0, Total length = 2809226, GC % = 32.80, # N's per 100 kbp =  0.00
+    4  100x_car, N50 = 98456, L50 = 9, auN = 127797.8, Total length = 2807880, GC % = 32.79, # N's per 100 kbp =  0.00
+    5  30x_iso, N50 = 102908, L50 = 8, auN = 136492.4, Total length = 2790683, GC % = 32.75, # N's per 100 kbp =  0.00
+    6  30x_car, N50 = 101318, L50 = 9, auN = 127353.1, Total length = 2790050, GC % = 32.76, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/GC_content_plot.pdf
+  Drawing completo GC content plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/completo_GC_content_plot.pdf
+  Drawing filtrado GC content plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/filtrado_GC_content_plot.pdf
+  Drawing 100x_iso GC content plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/100x_iso_GC_content_plot.pdf
+  Drawing 100x_car GC content plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/100x_car_GC_content_plot.pdf
+  Drawing 30x_iso GC content plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/30x_iso_GC_content_plot.pdf
+  Drawing 30x_car GC content plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/30x_car_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/coverage_histogram.pdf
+  Drawing completo coverage histogram (bin size: 55x)...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/completo_coverage_histogram.pdf
+  Drawing filtrado coverage histogram (bin size: 16x)...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/filtrado_coverage_histogram.pdf
+  Drawing 100x_iso coverage histogram (bin size: 2x)...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/100x_iso_coverage_histogram.pdf
+  Drawing 100x_car coverage histogram (bin size: 2x)...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/100x_car_coverage_histogram.pdf
+  Drawing 30x_iso coverage histogram (bin size: 1x)...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/30x_iso_coverage_histogram.pdf
+  Drawing 30x_car coverage histogram (bin size: 1x)...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/basic_stats/30x_car_coverage_histogram.pdf
+Done.
+
+2026-10-22 11:33:07
+Running Contig analyzer...
+WARNING: Version of installed minimap2 differs from its version in the QUAST package (2.28). Please make sure that you use an actual version of software.
+  1  completo
+  2  filtrado
+  1  Logging to files /home/matiasr/tp_final/10_depth/quast_comp/contigs_reports/contigs_report_completo.stdout and contigs_report_completo.stderr...
+  1  Aligning contigs to the reference
+  3  100x_iso
+  2  Logging to files /home/matiasr/tp_final/10_depth/quast_comp/contigs_reports/contigs_report_filtrado.stdout and contigs_report_filtrado.stderr...
+  4  100x_car
+  2  Aligning contigs to the reference
+  3  Logging to files /home/matiasr/tp_final/10_depth/quast_comp/contigs_reports/contigs_report_100x_iso.stdout and contigs_report_100x_iso.stderr...
+  4  Logging to files /home/matiasr/tp_final/10_depth/quast_comp/contigs_reports/contigs_report_100x_car.stdout and contigs_report_100x_car.stderr...
+  3  Aligning contigs to the reference
+  4  Aligning contigs to the reference
+WARNING: Version of installed minimap2 differs from its version in the QUAST package (2.28). Please make sure that you use an actual version of software.
+WARNING: Version of installed minimap2 differs from its version in the QUAST package (2.28). Please make sure that you use an actual version of software.
+WARNING: Version of installed minimap2 differs from its version in the QUAST package (2.28). Please make sure that you use an actual version of software.
+WARNING: Version of installed minimap2 differs from its version in the QUAST package (2.28). Please make sure that you use an actual version of software.
+  1  /home/matiasr/miniconda3/envs/quast_env/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 10_depth/quast_comp/quast_corrected_input/MRSA252.fasta 10_depth/quast_comp/quast_corrected_input/completo.fasta \
+     > 10_depth/quast_comp/contigs_reports/minimap_output/completo.coords_tmp 2>> \
+     10_depth/quast_comp/contigs_reports/contigs_report_completo.stderr
+  4  /home/matiasr/miniconda3/envs/quast_env/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 10_depth/quast_comp/quast_corrected_input/MRSA252.fasta 10_depth/quast_comp/quast_corrected_input/100x_car.fasta \
+     > 10_depth/quast_comp/contigs_reports/minimap_output/100x_car.coords_tmp 2>> \
+     10_depth/quast_comp/contigs_reports/contigs_report_100x_car.stderr
+  2  /home/matiasr/miniconda3/envs/quast_env/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 10_depth/quast_comp/quast_corrected_input/MRSA252.fasta 10_depth/quast_comp/quast_corrected_input/filtrado.fasta \
+     > 10_depth/quast_comp/contigs_reports/minimap_output/filtrado.coords_tmp 2>> \
+     10_depth/quast_comp/contigs_reports/contigs_report_filtrado.stderr
+  3  /home/matiasr/miniconda3/envs/quast_env/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 10_depth/quast_comp/quast_corrected_input/MRSA252.fasta 10_depth/quast_comp/quast_corrected_input/100x_iso.fasta \
+     > 10_depth/quast_comp/contigs_reports/minimap_output/100x_iso.coords_tmp 2>> \
+     10_depth/quast_comp/contigs_reports/contigs_report_100x_iso.stderr
+  2  Analysis is finished.
+
+  5  30x_iso
+  5  Logging to files /home/matiasr/tp_final/10_depth/quast_comp/contigs_reports/contigs_report_30x_iso.stdout and contigs_report_30x_iso.stderr...
+  5  Aligning contigs to the reference
+WARNING: Version of installed minimap2 differs from its version in the QUAST package (2.28). Please make sure that you use an actual version of software.
+  5  /home/matiasr/miniconda3/envs/quast_env/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 10_depth/quast_comp/quast_corrected_input/MRSA252.fasta 10_depth/quast_comp/quast_corrected_input/30x_iso.fasta \
+     > 10_depth/quast_comp/contigs_reports/minimap_output/30x_iso.coords_tmp 2>> 10_depth/quast_comp/contigs_reports/contigs_report_30x_iso.stderr
+  3  Analysis is finished.
+
+  6  30x_car
+  6  Logging to files /home/matiasr/tp_final/10_depth/quast_comp/contigs_reports/contigs_report_30x_car.stdout and contigs_report_30x_car.stderr...
+  6  Aligning contigs to the reference
+  4  Analysis is finished.
+
+WARNING: Version of installed minimap2 differs from its version in the QUAST package (2.28). Please make sure that you use an actual version of software.
+  6  /home/matiasr/miniconda3/envs/quast_env/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 10_depth/quast_comp/quast_corrected_input/MRSA252.fasta 10_depth/quast_comp/quast_corrected_input/30x_car.fasta \
+     > 10_depth/quast_comp/contigs_reports/minimap_output/30x_car.coords_tmp 2>> 10_depth/quast_comp/contigs_reports/contigs_report_30x_car.stderr
+  1  Analysis is finished.
+
+  5  Analysis is finished.
+
+  6  Analysis is finished.
+
+  Creating total report...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2026-10-22 11:33:11
+Running NA-NGA calculation...
+  1  completo, Largest alignment = 122531, NA50 = 22551, NGA50 = 33186, LA50 = 46, LGA50 = 27
+  2  filtrado, Largest alignment = 122531, NA50 = 35338, NGA50 = 33186, LA50 = 25, LGA50 = 27
+  3  100x_iso, Largest alignment = 144660, NA50 = 41227, NGA50 = 40448, LA50 = 20, LGA50 = 21
+  4  100x_car, Largest alignment = 144660, NA50 = 41227, NGA50 = 40448, LA50 = 20, LGA50 = 21
+  5  30x_iso, Largest alignment = 144660, NA50 = 39640, NGA50 = 37445, LA50 = 20, LGA50 = 22
+  6  30x_car, Largest alignment = 144660, NA50 = 39640, NGA50 = 37445, LA50 = 21, LGA50 = 23
+  Drawing cumulative plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/aligned_stats/NGAx_plot.pdf
+Done.
+
+2026-10-22 11:33:12
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  1  completo
+  2  filtrado
+  3  100x_iso
+  4  100x_car
+  3  Analysis is finished.
+  2  Analysis is finished.
+  5  30x_iso
+  6  30x_car
+  4  Analysis is finished.
+  1  Analysis is finished.
+  6  Analysis is finished.
+  5  Analysis is finished.
+  Drawing Genome fraction, % histogram...
+    saved to /home/matiasr/tp_final/10_depth/quast_comp/genome_stats/genome_fraction_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2026-10-22 11:33:13
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2026-10-22 11:33:15
+RESULTS:
+  Text versions of total report are saved to /home/matiasr/tp_final/10_depth/quast_comp/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/matiasr/tp_final/10_depth/quast_comp/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/matiasr/tp_final/10_depth/quast_comp/report.html
+  PDF version (tables and plots) is saved to /home/matiasr/tp_final/10_depth/quast_comp/report.pdf
+  Icarus (contig browser) is saved to /home/matiasr/tp_final/10_depth/quast_comp/icarus.html
+  Log is saved to /home/matiasr/tp_final/10_depth/quast_comp/quast.log
+
+Finished: 2026-10-22 11:33:15
+Elapsed time: 0:00:12.888033
+NOTICEs: 4; WARNINGs: 2; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

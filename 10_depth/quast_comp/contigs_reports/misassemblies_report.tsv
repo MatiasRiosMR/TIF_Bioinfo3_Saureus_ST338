@@ -1,0 +1,21 @@
+Assembly	completo	filtrado	100x_iso	100x_car	30x_iso	30x_car
+# misassemblies	51	47	49	49	48	49
+  # contig misassemblies	51	47	49	49	48	49
+    # c. relocations	51	47	49	49	48	49
+    # c. translocations	0	0	0	0	0	0
+    # c. inversions	0	0	0	0	0	0
+  # scaffold misassemblies	0	0	0	0	0	0
+    # s. relocations	0	0	0	0	0	0
+    # s. translocations	0	0	0	0	0	0
+    # s. inversions	0	0	0	0	0	0
+# misassembled contigs	31	27	22	22	19	22
+Misassembled contigs length	1942376	1937061	2151413	2151244	2062036	2103381
+# local misassemblies	59	59	58	58	57	57
+# scaffold gap ext. mis.	0	0	0	0	0	0
+# scaffold gap loc. mis.	0	0	0	0	0	0
+# unaligned mis. contigs	7	4	4	4	3	3
+# mismatches	44409	43979	43912	43902	43955	43944
+# indels	2154	2127	2111	2110	2111	2110
+    # indels (<= 5 bp)	1939	1913	1897	1896	1896	1894
+    # indels (> 5 bp)	215	214	214	214	215	216
+Indels length	11092	11040	11036	11035	11076	11192

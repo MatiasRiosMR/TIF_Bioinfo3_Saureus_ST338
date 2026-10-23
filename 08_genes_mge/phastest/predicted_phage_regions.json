@@ -1,0 +1,10 @@
+[
+	{
+		"region":1,
+		"start":30943,
+		"stop":38202,
+		"completeness":"questionable",
+		"most_common_phage":"PHAGE_Staphy_StB27_NC_019914",
+		"GC":26.86
+	}
+]

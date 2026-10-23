@@ -1,0 +1,41 @@
+# datos crudos y pesados
+00_raw/
+00_raw_ncbi/
+02_trim/
+*.sra
+*.fq.gz
+*.fastq.gz
+*.fq
+*.fastq
+# alineamientos e índices
+*.bam
+*.bai
+*.bt2
+09_igv/S1_ref.depth.tsv
+09_igv/pistas/
+10_depth/test/
+# intermedios de SPAdes
+03_assembly/**/K*/
+03_assembly/**/tmp/
+03_assembly/**/corrected/
+03_assembly/**/misc/
+03_assembly/**/pipeline_state/
+03_assembly/**/mismatch_corrector/
+03_assembly/**/assembly_graph*
+03_assembly/**/before_rr.fasta
+03_assembly/**/scaffolds.*
+10_depth/**/K*/
+10_depth/**/tmp/
+10_depth/**/corrected/
+10_depth/**/misc/
+10_depth/**/pipeline_state/
+10_depth/**/mismatch_corrector/
+10_depth/**/assembly_graph*
+10_depth/**/before_rr.fasta
+10_depth/**/scaffolds.*
+# otros
+**/icarus_viewers/
+08_genes_mge/blastdb_contigs_cov100/
+logs/wget-log*
+.DS_Store
+__pycache__/

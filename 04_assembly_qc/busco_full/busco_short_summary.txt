@@ -1,0 +1,30 @@
+# BUSCO version is: 6.1.0 
+# The lineage dataset is: bacillales_odb12 (Creation date: 2025-05-14, number of genomes: 169, number of BUSCOs: 429)
+# Summarized benchmarking in BUSCO notation for file /mnt/pulsar/files/staging/16258561/working/input.fa
+# BUSCO was run in mode: prok_genome_min
+# Gene predictor used: prodigal
+
+	***** Results: *****
+
+	C:93.9%[S:93.5%,D:0.5%],F:1.6%,M:4.4%,n:429,E:10.4%	   
+	403	Complete BUSCOs (C)	(of which 42 contain internal stop codons)		   
+	401	Complete and single-copy BUSCOs (S)	   
+	2	Complete and duplicated BUSCOs (D)	   
+	7	Fragmented BUSCOs (F)			   
+	19	Missing BUSCOs (M)			   
+	429	Total BUSCO groups searched		   
+
+Assembly Statistics:
+	17258	Number of scaffolds
+	17258	Number of contigs
+	8388158	Total length
+	0.000%	Percent gaps
+	2 kbp	Scaffold N50
+	2 kbp	Contigs N50
+
+
+Dependencies and versions:
+	hmmsearch: 3.4
+	bbtools: None
+	miniprot_index: 0.18-r281
+	miniprot_align: 0.18-r281

@@ -1,0 +1,6 @@
+contig	largo_pb	cov_kmer	registros_en_tabla	registros_hit_casi_completo(>=95%id,>=95%cob)	registros_>=99%id	copias_max_por_registro	mejor_hit	mejor_id	mejor_cob_pb
+NODE_66	2924	778	100	11	10	2	OR901656.1	100.000	2924
+NODE_85	1795	790	100	12	10	2	OR901656.1	100.000	1795
+NODE_201	1122	660	100	100	100	2	OR901656.1	100.000	1122
+NODE_987	606	858	100	100	100	3	OR901656.1	100.000	606
+NODE_1251	552	2106	100	100	100	18	CP180841.1	100.000	552
