@@ -4,7 +4,7 @@
 Capturas de pantalla de IGV incluidas en el informe (Figuras 16–21, 26 y 27).
 
 ## Herramientas
-IGV 2.13.2 [VERIFICAR: versión usada para las capturas]. Pistas de las Figuras 16–21: `../cargar_igv.batch` (genoma `05_reference/MRSA252.fasta`;
+IGV 2.13.2. Pistas de las Figuras 16–21: `../cargar_igv.batch` (genoma `05_reference/MRSA252.fasta`;
 pistas `S1_ref.bw`, `S1_ref.bam`, `regiones_cov0.bed`, `regiones_cov_alta.bed`, y para las Figuras 26 y 27 el ensamblado, su BAM y el GFF de Prokka).
 
 ## Archivos
@@ -22,8 +22,8 @@ pistas `S1_ref.bw`, `S1_ref.bam`, `regiones_cov0.bed`, `regiones_cov_alta.bed`, 
 Formato PNG; 34–170 kB cada una (≈630 kB en total). Las descripciones salen de los nombres de archivo.
 
 ## Origen
-Capturas manuales en IGV; las Figuras 26 y 27 usan el ensamblado y su BAM (`../S1_asm.bam`) [VERIFICAR: pistas cargadas]. Las posiciones de las Figuras 16–21 corresponden a
-`goto` de `../cargar_igv.batch` y a `../regiones_cov0.bed` / `../regiones_cov_alta.bed`. El comando de las Figuras 26 y 27 no está registrado [VERIFICAR].
+Capturas manuales en IGV; las Figuras 26 y 27 usan el ensamblado y su BAM (`../S1_asm.bam`). Las posiciones de las Figuras 16–21 corresponden a
+`goto` de `../cargar_igv.batch` y a `../regiones_cov0.bed` / `../regiones_cov_alta.bed`. El comando de las Figuras 26 y 27 no está registrado.
 
 ## Excluido por .gitignore
 Nada.

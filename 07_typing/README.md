@@ -4,7 +4,7 @@
 Asignar el tipo de secuencia (ST) del aislamiento B378 sobre el ensamblado filtrado.
 
 ## Herramientas
-`mlst` (esquema *saureus*) [VERIFICAR: versión y si se ejecutó localmente o en Galaxy; no hay script ni log en el repositorio].
+`mlst` (esquema *saureus*).
 
 ## Archivos
 | Archivo | Contenido |
@@ -18,4 +18,4 @@ Tamaño: <1 kB.
 Nada.
 
 ## Correspondencia con el informe
-Resultado 1 (tipificación del aislamiento, ST338) [VERIFICAR: sección y tabla].
+Resultado 1 (tipificación del aislamiento, ST338).

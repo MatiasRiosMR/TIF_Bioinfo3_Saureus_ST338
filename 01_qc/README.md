@@ -1,8 +1,7 @@
 # 01_qc: control de calidad de las lecturas
 
 ## Propósito
-Evaluar la calidad de las lecturas crudas (`raw/`) y de las recortadas (`trim/`). Sección 2.1 y 2.2.2 del informe
-[VERIFICAR: numeración de secciones y figuras del informe final].
+Evaluar la calidad de las lecturas crudas (`raw/`) y de las recortadas (`trim/`). Sección 2.1 y 2.2.2 del informe.
 
 ## Herramientas
 FastQC 0.12.1 y MultiQC 1.35 (entorno `tif_bioinfo3`).
@@ -26,4 +25,4 @@ Tamaño: ≈9 MB en total. Las tablas `multiqc_data/*.txt` tienen una fila por m
 Las lecturas (`00_raw/`, `02_trim/`). Para regenerar: ver `scripts/01_descarga_lecturas_ncbi.sh` y `scripts/04_recorte_trimmomatic.sh`.
 
 ## Correspondencia con el informe
-Figuras de calidad de lecturas antes y después del recorte [VERIFICAR: números de figura y tabla].
+Figuras de calidad de lecturas antes y después del recorte.

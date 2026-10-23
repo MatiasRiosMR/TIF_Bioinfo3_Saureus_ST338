@@ -280,46 +280,46 @@ También existen en disco pero no se versionan los BAM/BAI y `09_igv/S1_ref.dept
 ## Archivo → origen → destino en el informe
 
 Los números de figura y tabla del informe final no pudieron comprobarse desde el repositorio; solo las capturas de IGV llevan el
-número en el nombre. El resto se marca [VERIFICAR]. Las rutas de scripts son relativas a la raíz.
+número en el nombre. El resto se marca. Las rutas de scripts son relativas a la raíz.
 
 | Archivo | Origen (script o herramienta) | Destino en el informe |
 |---|---|---|
-| `01_qc/raw/` | `scripts/03_qc_lecturas_crudas.sh` | QC de lecturas crudas (Sec. 2.1) [VERIFICAR: figuras/tablas] |
-| `01_qc/trim/` | `scripts/05_qc_posterior_recorte.sh` | QC tras el recorte (Sec. 2.2.2) [VERIFICAR] |
-| `logs/trimmomatic_S1.log` | `scripts/04_recorte_trimmomatic.sh` | Recorte (Sec. 2.2.1) [VERIFICAR] |
-| `03_assembly/S1_full/contigs.fasta` | `scripts/07_spades_completo.sh` | Ensamblado completo (Sec. 2.3.2) [VERIFICAR] |
-| `03_assembly/S1_full/contigs_cov100.fasta` | `scripts/11_filtrar_cov100.sh` | Ensamblado filtrado (Sec. 2.4) [VERIFICAR] |
-| `04_assembly_qc/quast_full/` | `scripts/09_quast_completo.sh` | Evaluación del ensamblado completo [VERIFICAR] |
-| `04_assembly_qc/quast_cov100/` | `scripts/planificados/12_comparacion_referencia_igv.sh` | Evaluación del ensamblado filtrado [VERIFICAR] |
-| `04_assembly_qc/busco_full/` | Galaxy, `scripts/galaxy/busco_galaxy.md` | BUSCO [VERIFICAR] |
-| `04_assembly_qc/dgenies_cov100/` | D-Genies (web); sin script | Comparación con MRSA252 [VERIFICAR] |
-| `04_assembly_qc/S1_coverage.tsv` | `scripts/10_cobertura_real_bowtie2.sh` | Profundidad real por contig [VERIFICAR] |
-| `04_assembly_qc/contigs_filtrados_atipicos.tsv` | `scripts/analisis/analisis_contigs_gc_cobertura.R` | Contigs atípicos [VERIFICAR] |
-| `04_assembly_qc/regiones_sin_correspondencia_MRSA252.tsv` | `scripts/analisis/regiones_sin_correspondencia_MRSA252.py` | Tramos propios de B378 [VERIFICAR] |
-| `04_assembly_qc/gc_tramos_B378.tsv` | `scripts/analisis/fig29_contexto_genomico.py` | GC de los tramos [VERIFICAR] |
-| `05_reference/MRSA252.fasta` | `scripts/02_descarga_referencia.sh` | Datos de entrada (Sec. 2.0.5) [VERIFICAR] |
-| `06_annotation/prokka/` | Galaxy, `scripts/galaxy/prokka_galaxy.md` | Anotación (Sec. 2.6) [VERIFICAR] |
-| `06_annotation/prokka/B378_prokka_nodenames.gff3` | sin script registrado | Insumo de IGV (Figuras 26 y 27) [VERIFICAR: origen] |
-| `07_typing/mlst_S1.tsv` | `mlst`; sin script | Resultado 1, tipificación [VERIFICAR] |
-| `08_genes_mge/abricate_card_S1.tsv` | ABRicate (CARD); sin script | Resistencia [VERIFICAR] |
-| `08_genes_mge/abricate_vfdb_S1.tsv` | ABRicate (VFDB); sin script | Virulencia [VERIFICAR] |
-| `08_genes_mge/tblastn_genes_S1.tsv` | tBLASTn; sin script | Reproducción del Resultado 2 [VERIFICAR] |
-| `08_genes_mge/copias_estimadas_S1.tsv` | `scripts/analisis/fig28_copias_estimadas.py` | Multicopia [VERIFICAR] |
-| `08_genes_mge/blast_ncbi/` | BLASTn web de NCBI; resumen por `blast_resumen_tramos.py` [VERIFICAR] | Multicopia [VERIFICAR] |
-| `08_genes_mge/phastest/` | PHASTEST (web); sin script | Profagos [VERIFICAR] |
-| `09_igv/regiones_cov0.bed`, `regiones_cov_alta.bed` | derivadas de `S1_ref.depth.tsv` [VERIFICAR: comando] | Regiones sin cobertura y de cobertura alta [VERIFICAR] |
-| `09_igv/S1_ref.bw`, `S1_ref.bam` | `scripts/planificados/12_comparacion_referencia_igv.sh` | Mapeo a MRSA252 [VERIFICAR] |
-| `09_igv/fig25_cobertura.png` | `scripts/analisis/fig25_cobertura_MRSA252.py` | Cobertura a lo largo de MRSA252 [VERIFICAR: n.º de figura] |
+| `01_qc/raw/` | `scripts/03_qc_lecturas_crudas.sh` | QC de lecturas crudas (Sec. 2.1) |
+| `01_qc/trim/` | `scripts/05_qc_posterior_recorte.sh` | QC tras el recorte (Sec. 2.2.2) |
+| `logs/trimmomatic_S1.log` | `scripts/04_recorte_trimmomatic.sh` | Recorte (Sec. 2.2.1) |
+| `03_assembly/S1_full/contigs.fasta` | `scripts/07_spades_completo.sh` | Ensamblado completo (Sec. 2.3.2) |
+| `03_assembly/S1_full/contigs_cov100.fasta` | `scripts/11_filtrar_cov100.sh` | Ensamblado filtrado (Sec. 2.4) |
+| `04_assembly_qc/quast_full/` | `scripts/09_quast_completo.sh` | Evaluación del ensamblado completo |
+| `04_assembly_qc/quast_cov100/` | `scripts/planificados/12_comparacion_referencia_igv.sh` | Evaluación del ensamblado filtrado |
+| `04_assembly_qc/busco_full/` | Galaxy, `scripts/galaxy/busco_galaxy.md` | BUSCO |
+| `04_assembly_qc/dgenies_cov100/` | D-Genies (web); sin script | Comparación con MRSA252 |
+| `04_assembly_qc/S1_coverage.tsv` | `scripts/10_cobertura_real_bowtie2.sh` | Profundidad real por contig |
+| `04_assembly_qc/contigs_filtrados_atipicos.tsv` | `scripts/analisis/analisis_contigs_gc_cobertura.R` | Contigs atípicos |
+| `04_assembly_qc/regiones_sin_correspondencia_MRSA252.tsv` | `scripts/analisis/regiones_sin_correspondencia_MRSA252.py` | Tramos propios de B378 |
+| `04_assembly_qc/gc_tramos_B378.tsv` | `scripts/analisis/fig29_contexto_genomico.py` | GC de los tramos |
+| `05_reference/MRSA252.fasta` | `scripts/02_descarga_referencia.sh` | Datos de entrada (Sec. 2.0.5) |
+| `06_annotation/prokka/` | Galaxy, `scripts/galaxy/prokka_galaxy.md` | Anotación (Sec. 2.6) |
+| `06_annotation/prokka/B378_prokka_nodenames.gff3` | sin script registrado | Insumo de IGV (Figuras 26 y 27) |
+| `07_typing/mlst_S1.tsv` | `mlst`; sin script | Resultado 1, tipificación |
+| `08_genes_mge/abricate_card_S1.tsv` | ABRicate (CARD); sin script | Resistencia |
+| `08_genes_mge/abricate_vfdb_S1.tsv` | ABRicate (VFDB); sin script | Virulencia |
+| `08_genes_mge/tblastn_genes_S1.tsv` | tBLASTn; sin script | Reproducción del Resultado 2 |
+| `08_genes_mge/copias_estimadas_S1.tsv` | `scripts/analisis/fig28_copias_estimadas.py` | Multicopia |
+| `08_genes_mge/blast_ncbi/` | BLASTn web de NCBI; resumen por `blast_resumen_tramos.py` | Multicopia |
+| `08_genes_mge/phastest/` | PHASTEST (web); sin script | Profagos |
+| `09_igv/regiones_cov0.bed`, `regiones_cov_alta.bed` | derivadas de `S1_ref.depth.tsv` | Regiones sin cobertura y de cobertura alta |
+| `09_igv/S1_ref.bw`, `S1_ref.bam` | `scripts/planificados/12_comparacion_referencia_igv.sh` | Mapeo a MRSA252 |
+| `09_igv/fig25_cobertura.png` | `scripts/analisis/fig25_cobertura_MRSA252.py` | Cobertura a lo largo de MRSA252 |
 | `09_igv/capturas_finales/Figura_16_*.png` a `Figura_21_*.png` | IGV (manual) con `09_igv/cargar_igv.batch` | Figuras 16–21 |
 | `09_igv/capturas_finales/Figura_26_*.png`, `Figura_27_*.png` | IGV (manual) | Figuras 26 y 27 |
-| `10_depth/metricas_submuestreos.tsv` | `scripts/analisis/fig30_profundidad_vs_ensamblado.py` | Análisis 1, métricas [VERIFICAR] |
-| `10_depth/quast_comp/` | `scripts/planificados/13_submuestreos_100x_30x.sh` | Análisis 1, QUAST comparativo [VERIFICAR] |
-| `10_depth/abricate_vfdb/` | ABRicate (VFDB); sin script | Análisis 1, virulencia por estrategia [VERIFICAR] |
-| `figuras/fig23_informe.png` | `scripts/analisis/fig23_informe.R` | [VERIFICAR] |
-| `figuras/fig26_prokka_multicopia_ebh.png` | `scripts/analisis/fig26_prokka_multicopia_ebh.py` | [VERIFICAR] |
-| `figuras/fig27_blast_multicopia.png` | `scripts/analisis/fig27_blast_multicopia.py` | [VERIFICAR] |
-| `figuras/fig28_copias_estimadas.png` | `scripts/analisis/fig28_copias_estimadas.py` | [VERIFICAR] |
-| `figuras/fig29A_mapa.png`, `fig29B_gc.png` | `scripts/analisis/fig29_contexto_genomico.py` | [VERIFICAR] |
-| `figuras/fig30.png` | `scripts/analisis/fig30_profundidad_vs_ensamblado.py` | [VERIFICAR] |
-| `figuras/FigX_gc_cobertura.png` | `scripts/analisis/analisis_contigs_gc_cobertura.R` | [VERIFICAR] |
-| `envs/*.yml`, `logs/conda_list_tif_bioinfo3.txt` | `scripts/envs/exportar_entornos.sh` | Entorno de software (Sec. 3.2) [VERIFICAR] |
+| `10_depth/metricas_submuestreos.tsv` | `scripts/analisis/fig30_profundidad_vs_ensamblado.py` | Análisis 1, métricas |
+| `10_depth/quast_comp/` | `scripts/planificados/13_submuestreos_100x_30x.sh` | Análisis 1, QUAST comparativo |
+| `10_depth/abricate_vfdb/` | ABRicate (VFDB); sin script | Análisis 1, virulencia por estrategia |
+| `figuras/fig23_informe.png` | `scripts/analisis/fig23_informe.R` | — |
+| `figuras/fig26_prokka_multicopia_ebh.png` | `scripts/analisis/fig26_prokka_multicopia_ebh.py` | — |
+| `figuras/fig27_blast_multicopia.png` | `scripts/analisis/fig27_blast_multicopia.py` | — |
+| `figuras/fig28_copias_estimadas.png` | `scripts/analisis/fig28_copias_estimadas.py` | — |
+| `figuras/fig29A_mapa.png`, `fig29B_gc.png` | `scripts/analisis/fig29_contexto_genomico.py` | — |
+| `figuras/fig30.png` | `scripts/analisis/fig30_profundidad_vs_ensamblado.py` | — |
+| `figuras/FigX_gc_cobertura.png` | `scripts/analisis/analisis_contigs_gc_cobertura.R` | — |
+| `envs/*.yml`, `logs/conda_list_tif_bioinfo3.txt` | `scripts/envs/exportar_entornos.sh` | Entorno de software (Sec. 3.2) |

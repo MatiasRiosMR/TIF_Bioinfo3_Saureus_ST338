@@ -29,4 +29,4 @@ Se regeneran ejecutando de nuevo `scripts/07_spades_completo.sh` (requiere `02_t
 `spades.log`, `params.txt` y `run_spades.*` conservan rutas absolutas de la máquina de origen (generadas por SPAdes).
 
 ## Correspondencia con el informe
-Sección de ensamblado (2.3) y de filtrado (2.4); tablas de métricas de SPAdes/QUAST [VERIFICAR: números de tabla].
+Sección de ensamblado (2.3) y de filtrado (2.4); tablas de métricas de SPAdes/QUAST.

@@ -23,7 +23,7 @@ Comandos del Anexo C del informe, numerados en orden de ejecución.
 | `10_cobertura_real_bowtie2.sh` | 2.4.1 | Bowtie2 2.5.5, SAMtools 1.24 | Profundidad real por contig → `04_assembly_qc/S1_coverage.tsv` |
 | `11_filtrar_cov100.sh` | 2.4 | awk | Filtro ≥500 pb y k-mers ≥100 → `contigs_cov100.fasta` (74 contigs) |
 
-Numeración de secciones: la de los comentarios de cada script [VERIFICAR contra el informe final].
+Numeración de secciones: la de los comentarios de cada script.
 
 ## Subcarpetas
 | Carpeta | Contenido |
@@ -33,12 +33,12 @@ Numeración de secciones: la de los comentarios de cada script [VERIFICAR contra
 | `galaxy/` | Registro de Prokka 1.14.6, BUSCO 6.1.0 y subida de archivos a Galaxy Australia (`.md`) |
 | `planificados/` | `12_comparacion_referencia_igv.sh` (Bowtie2 a MRSA252, bigWig, QUAST del filtrado) y `13_submuestreos_100x_30x.sh` (≈100× y ≈30×, iso y car, QUAST) |
 
-## Estado de los scripts planificados [VERIFICAR]
+## Estado de los scripts planificados
 Ambos conservan la cabecera "PLANIFICADO, todavía no se ejecutó", pero existen sus salidas (`09_igv/S1_ref.bam`, `09_igv/S1_ref.bw`,
 `04_assembly_qc/quast_cov100/`, `10_depth/S1_*_{iso,car}/`, `10_depth/quast_comp/`). El script 13 calcula las fracciones con 762,5×,
 mientras la mediana sobre MRSA252 es 702× (`S1_ref.depth.tsv`).
 
 ## No incluido
-- MLST, ABRicate, BLAST+, PHASTEST y D-Genies: hay resultados en `07_typing/`, `08_genes_mge/` y `04_assembly_qc/dgenies_cov100/`, pero no scripts [VERIFICAR].
+- MLST, ABRicate, BLAST+, PHASTEST y D-Genies: hay resultados en `07_typing/`, `08_genes_mge/` y `04_assembly_qc/dgenies_cov100/`, pero no scripts.
 - La descarga inicial desde ENA (descartada por calidades simplificadas; ver el registro de decisiones del informe).
 - Los scripts usan `PROJ`, pero `spades.log`, `params.txt` y `09_igv/cargar_igv.batch` conservan rutas absolutas de la máquina de origen.

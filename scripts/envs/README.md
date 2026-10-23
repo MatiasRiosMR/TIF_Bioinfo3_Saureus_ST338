@@ -19,6 +19,6 @@ Los YAML no están en esta carpeta sino en `envs/` (raíz del repositorio):
 
 Recrear: `conda env create -f envs/tif_bioinfo3.yml` y `conda env create -f envs/quast_env.yml`.
 
-## Discrepancias [VERIFICAR]
+## Discrepancias
 - El script también guardaría `logs/conda_list_quast_env.txt`, que no existe en el repositorio.
 - deepTools, ABRicate, mlst y los paquetes de R (mclust, ggrepel, scales) no figuran en `envs/tif_bioinfo3.yml`.

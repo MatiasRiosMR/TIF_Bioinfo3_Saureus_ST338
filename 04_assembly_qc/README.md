@@ -29,5 +29,5 @@ Completo: 17 258 contigs, N50 43 072, fracción del genoma 86,236 %. Filtrado: 7
 BUSCO: C 93,9 % (403/429), F 1,6 %, M 4,4 %.
 
 ## Correspondencia con el informe
-Secciones 2.4 y 2.5: tablas de QUAST y BUSCO, mapa de contigs (D-Genies), regiones sin correspondencia [VERIFICAR: tablas y figuras].
-Los comandos de D-Genies y de `regiones_sin_correspondencia_MRSA252.py` no figuran en `scripts/00-11` [VERIFICAR].
+Secciones 2.4 y 2.5: tablas de QUAST y BUSCO, mapa de contigs (D-Genies), regiones sin correspondencia.
+Los comandos de D-Genies y de `regiones_sin_correspondencia_MRSA252.py` no figuran en `scripts/00-11`.

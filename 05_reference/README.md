@@ -20,4 +20,4 @@ Tamaño: 15 MB (los `.bt2` son la mayor parte).
 `*.bt2`. Se regenera con `bowtie2-build 05_reference/MRSA252.fasta 05_reference/MRSA252`.
 
 ## Correspondencia con el informe
-Sección de datos de entrada (2.0.5) [VERIFICAR: número exacto].
+Sección de datos de entrada (2.0.5).

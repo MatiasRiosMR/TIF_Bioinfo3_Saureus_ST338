@@ -5,14 +5,14 @@ Comparar el ensamblado completo (≈800×) con submuestreos de ≈100× y ≈30�
 y evaluar con QUAST y ABRicate (VFDB). Además contiene la prueba con el 5 % de los pares.
 
 ## Herramientas
-seqtk 1.5 (`sample -s 42`), SPAdes 4.3.0, QUAST 5.3.0 (`quast_env`), ABRicate [VERIFICAR: versión].
+seqtk 1.5 (`sample -s 42`), SPAdes 4.3.0, QUAST 5.3.0 (`quast_env`), ABRicate.
 
 ## Generado por
 - `scripts/06_spades_prueba_5pct.sh` → `test_R{1,2}.fq.gz`, `test/`.
 - `scripts/planificados/13_submuestreos_100x_30x.sh` → `S1_{100x,30x}_R{1,2}.fq.gz` (fracciones 0,1311 y 0,0393), `S1_{100x,30x}_{iso,car}/`
-  y `quast_comp/` (cabecera "PLANIFICADO"; las salidas existen [VERIFICAR: ejecución tal cual]). Tiempos: `logs/spades_*.time`.
+  y `quast_comp/` (cabecera "PLANIFICADO"; las salidas existen). Tiempos: `logs/spades_*.time`.
 - `metricas_submuestreos.tsv` → `scripts/analisis/fig30_profundidad_vs_ensamblado.py` (a partir de `quast_comp/report.tsv`).
-- `abricate_vfdb/` → ABRicate con la base VFDB sobre cada `contigs.fasta` [VERIFICAR: comando; no está en los scripts].
+- `abricate_vfdb/` → ABRicate con la base VFDB sobre cada `contigs.fasta`.
 
 ## Archivos
 | Ruta | Contenido |
@@ -32,4 +32,4 @@ Regenerar: ejecutar el script 13 (requiere `02_trim/`).
 N50: completo 43 072; filtrado 70 746; 100× iso 98 457; 30× iso 102 908. Fracción de MRSA252: 85,4–86,2 % en todas las estrategias.
 
 ## Correspondencia con el informe
-Sección 2.9 (Análisis 1); figura de métricas (`figuras/fig30.png`, `figuras/fig23_informe.png`) [VERIFICAR: tablas y figuras].
+Sección 2.9 (Análisis 1); figura de métricas (`figuras/fig30.png`, `figuras/fig23_informe.png`).

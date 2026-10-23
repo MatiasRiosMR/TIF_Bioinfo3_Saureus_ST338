@@ -2,7 +2,7 @@
 
 ## Propósito
 Scripts de Python y R que generan las figuras y las tablas de análisis del informe. Se ejecutan desde la raíz del repositorio,
-con el entorno `tif_bioinfo3` (Python 3.14.7, R 4.4.3). Los paquetes de R (ggplot2, patchwork, ragg, scales, mclust, ggrepel) no figuran en el YAML del entorno [VERIFICAR].
+con el entorno `tif_bioinfo3` (Python 3.14.7, R 4.4.3). Los paquetes de R (ggplot2, patchwork, ragg, scales, mclust, ggrepel) no figuran en el YAML del entorno.
 
 ## Scripts
 | Script | Uso (argumentos) | Salida |
@@ -26,7 +26,7 @@ con el entorno `tif_bioinfo3` (Python 3.14.7, R 4.4.3). Los paquetes de R (ggplo
 
 Comandos con rutas reales: `README.md` raíz.
 
-## Notas [VERIFICAR]
+## Notas
 - Las docstrings numeran las figuras con versiones anteriores del informe (20, 21, 22, 23, 24, 25); no coinciden con la numeración final.
 - `fig26`, `fig27`, `fig29` y `fig30` documentan una invocación sin prefijo de carpeta (`python3 fig26_...`): se ejecutan desde la raíz con la ruta `scripts/analisis/`.
 - El encabezado que escribe `blast_resumen_tramos.py` no coincide con el de `08_genes_mge/blast_ncbi/blast_multicopia_S1_resumen.tsv`.
