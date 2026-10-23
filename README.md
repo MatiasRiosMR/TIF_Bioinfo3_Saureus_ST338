@@ -20,12 +20,13 @@ Licenciatura en Bioinformática · Bioinformática 3
 2. [Pregunta y objetivos](#pregunta-y-objetivos)
 3. [Resultados principales](#resultados-principales)
 4. [Datos de entrada](#datos-de-entrada)
-5. [Estructura del repositorio](#estructura-del-repositorio)
-6. [Flujo de trabajo y orden de ejecución](#flujo-de-trabajo-y-orden-de-ejecución)
-7. [Entorno de software](#entorno-de-software)
-8. [Reproducción de figuras y tablas](#reproducción-de-figuras-y-tablas)
-9. [Limitaciones](#limitaciones)
-10. [Cómo citar](#cómo-citar) y [Contacto](#contacto)
+5. [Artículo de referencia](#artículo-de-referencia)
+6. [Estructura del repositorio](#estructura-del-repositorio)
+7. [Flujo de trabajo y orden de ejecución](#flujo-de-trabajo-y-orden-de-ejecución)
+8. [Entorno de software](#entorno-de-software)
+9. [Reproducción de figuras y tablas](#reproducción-de-figuras-y-tablas)
+10. [Limitaciones](#limitaciones)
+11. [Cómo citar](#cómo-citar) y [Contacto](#contacto)
 
 ## Resumen
 
@@ -82,6 +83,17 @@ Los datos crudos no se incluyen en el repositorio.
 Excluido por `.gitignore`: `00_raw/`, `00_raw_ncbi/` y `02_trim/` (≈5 GB); BAM/BAI e índices Bowtie2 (`*.bt2`); intermedios de
 SPAdes (`K*/`, `corrected/`, `scaffolds.*`, grafos); `09_igv/pistas/` y `09_igv/S1_ref.depth.tsv`; `10_depth/test/`; lecturas
 submuestreadas (`*.fq.gz`); `icarus_viewers/` y la base BLAST local. Cada README de carpeta indica cómo regenerarlos.
+
+## Artículo de referencia
+
+El trabajo toma como referencia el estudio de Chen et al. (2024), que compara mediante un GWAS de k-mers aislamientos de
+*S. aureus* de sitios de infección (272) y de portación nasal (240), y propone un modelo de clasificación basado en
+random forest. Las proteínas consulta del tBLASTn de `08_genes_mge/proteinas_genes_chen2024.fasta` corresponden a genes
+tomados de ese artículo.
+
+> Chen, J., Du, W., Li, Y., Zhou, H., Ouyang, D., Yao, Z., Fu, J., Ye, X. (2024). Genome-based model for differentiating between
+> infection and carriage *Staphylococcus aureus*. *Microbiology Spectrum*, 12(10), e00493-24.
+> https://doi.org/10.1128/spectrum.00493-24
 
 ## Estructura del repositorio
 
