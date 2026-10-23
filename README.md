@@ -11,7 +11,6 @@ Trabajo Práctico Final, Modalidad C (ensamblado de novo y caracterización gen�
 | Año | 2026 |
 | Fecha de entrega | 05/11/2026 (aula virtual) |
 | Repositorio | https://github.com/MatiasRiosMR/TIF_Bioinfo3_Saureus_ST338.git |
-| Licencia | [COMPLETAR, p. ej. CC BY 4.0 para el texto y MIT para el código] |
 
 ## Resumen
 
